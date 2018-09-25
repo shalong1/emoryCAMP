@@ -641,7 +641,7 @@ if(!$fgmembersite->DBLogin())
                                             <a href="#" class="bio-link read-more" data-toggle="modal" data-target=".bio-cherng">read more</a>
                                         </div>
                                         <div class="team-content">
-                                            <h4 class="title">>Sarah Cherng, PHD</h4>
+                                            <h4 class="title">Sarah Cherng, PHD</h4>
                                             <span class="post">Postdoctoral Fellow</span>
                                         </div>
                                     </div>
