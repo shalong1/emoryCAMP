@@ -666,7 +666,7 @@ if(!$fgmembersite->DBLogin())
                                 <div class="col-md-3 col-sm-6">
                                     <div class="our-team">
                                         <div class="pic">
-                                            <img src="images/bios/NoPhotoSq.jpg"   alt="Jeremy Grey, PHD">
+                                            <img src="images/bios/Grey.jpg"   alt="Jeremy Grey, PHD">
                                             <a href="#" class="bio-link read-more" data-toggle="modal" data-target=".bio-grey">read more</a>
                                         </div>
                                         <div class="team-content">
@@ -683,7 +683,7 @@ if(!$fgmembersite->DBLogin())
                                                 <h4 class="modal-title">Jeremy Grey, PHD</h4>
                                             </div>
                                             <div class="modal-body">
-                                                <img class="img-responsive pull-left" style="width: 180px; padding-right: 7px;" src="images/bios/NoPhotoSq.jpg"
+                                                <img class="img-responsive pull-left" style="width: 180px; padding-right: 7px;" src="images/bios/Grey.jpg"
                                                     alt="Jeremy Grey, PHD">
                                                 <p>No additional info.</p>
                                             </div>
