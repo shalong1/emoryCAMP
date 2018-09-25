@@ -1,0 +1,94 @@
+<markers>
+	<marker name="SUNY" address="353 Broadway Albany, NY 12246"
+		email="" website="" phone="" lat="42.648032" lng="-73.749676" type="ai">
+		<people name="Eli Rosenberg" link="about.php#rosenberg" email="" />
+	</marker>
+	<marker name="Centers for Disease Control and Prevention"
+		address="1600 Clifton Rd, Atlanta, GA 30333" website="http://www.cdc.gov"
+		phone="(404)639-3311" lat="33.799318" lng="-84.328008" type="cdc" />
+	<marker name="Emory University" address="1518 Clifton Rd, Atlanta, GA 30322"
+		email="emorycamp@emory.edu" website="http://www.sph.emory.edu" phone="(404)727-3956"
+		lat="33.797420" lng="-84.323435" type="ai">
+		<people name="Patrick Sullivan" link="about.php#sullivan"
+			email="" />
+		<people name="Travis Sanchez" link="about.php#sanchez" email="" />
+		<people name="Monica Trigg" link="about.php#trigg" email="" />
+		<people name="James Curran" link="about.php#curran" email="" />
+		<people name="Carlos del Rio" link="about.php#delrio" email="" />
+	</marker>
+	<marker name="Building Healthy Online Communities" address="San Francisco, CA"
+		email="" website="http://www.bhocpartners.org/contact-information/"
+		phone="" lat="37.773972" lng="-122.431297" type="phag">
+		<people name="Dan Wohlfeiler" link="advisory-group.php#wohlfeiler"
+			email="dan.wohlfeiler@ucsf.edu" />
+	</marker>
+	<marker name="Georgia Department of Public Health"
+		address="2 Peachtree Street, NW, 15th Floor, Atlanta, Georgia 30303-3186"
+		email="" website="http://www.dph.georgia.gov" phone="404-657-2700"
+		lat="33.754074" lng="-84.390267" type="phag">
+		<people name="Jane Kelly" link="advisory-group.php#kelly"
+			email="jane.kelly@dph.ga.gov" />
+		<people name="Gregory Felzien" link="advisory-group.php#felzien"
+			email="gregory.felzien@dph.ga.gov" />
+		<people name="Michelle Allen" link="advisory-group.php#allen"
+			email="michelle.allen@dph.ga.gov" />
+	</marker>
+	<marker name="Johns Hopkins University" address="615 N Wolfe St, Baltimore, MD 21205"
+		email="" website="http://www.jhsph.edu" phone="" lat="39.297967" lng="-76.589822"
+		type="ai">
+		<people name="Dalid Holtgrave" link="" email="dholtgra@jhsph.edu" />
+		<people name="David Dowdy" link="about-partner.php#dowdy"
+			email="ddowdy1@jhmi.edu" />
+	</marker>
+	<marker name="National Coalition of STD Directors" address="Washington, D.C."
+		email="" website="" phone="" lat="38.9072" lng="-77.0369" type="phag">
+		<people name="David Harvey" link="advisory-group.php#harvey"
+			email="dharvey@ncsddc.org" />
+	</marker>
+	<marker name="New York City Department of Health and Mental Hygiene"
+		address="42-09 28th St, Queens, NY 11101" email="" website="http://www.nyc.gov"
+		phone="(347)396-7195" lat="40.749366" lng="-73.938989" type="phag">
+		<people name="Susan Blank" link="advisory-group.php#blank"
+			email="sblank@health.nyc.gov" />
+	</marker>
+	<marker name="Columbia Univeristy Mailman School of Public Health" address="722 W 168th St, New York, NY 10032"
+		email="" website="https://www.mailman.columbia.edu/people/our-faculty/search/?letter=C" phone="(212) 305-3927"
+		lat="40.842733" lng="-73.943366" type="phag">
+		<people name="Mary Ann Chiasson" link="advisory-group.php#chiasson"
+			email="mac10@cumc.columbia.edu" />
+	</marker>
+	<marker name="Tri-County Health Department"
+		address="6162 S. Willow Drive, Suite 100, Greenwood Village, CO 80111"
+		email="" website="http://www.tchd.org" phone="303-220-9200" lat="39.605114"
+		lng="-104.886165" type="phag">
+		<people name="John Douglas" link="advisory-group.php#douglas"
+			email="jmdouglas@tchd.org" />
+	</marker>
+	<marker name="Texas Department of State Health Services"
+		address="1100 West 49th Street, Austin, TX 78756" email=""
+		website="http://www.tchd.org" phone="(512) 776-7111" lat="30.320432"
+		lng="-97.733659" type="phag">
+		<people name="Jonathon Poe" link="advisory-group.php#poe"
+			email="jonathon.poe@dshs.texas.gov" />
+	</marker>
+	<marker name="Rhode Island Department of Health" address="3 Capitol Hill, Providence, RI 02908"
+		email="" website="http://www.health.state.ri.us" phone="" lat="41.833472"
+		lng="-71.414694" type="phag">
+		<people name="Tom Bertrand" link="advisory-group.php#bertrand"
+			email="Thomas.Bertrand@health.ri.gov" />
+	</marker>
+	<marker name="University of Washington" address="Seattle, WA 98195"
+		email="" website="http://www.washington.edu" phone="(206)543-2100"
+		lat="47.655440" lng="-122.303949" type="ai">
+		<people name="Steven Goodreau" link="about-partner.php#goodreau"
+			email="goodreau@uw.edu" />
+		<people name="Martina Morris" link="about.php#morris" email="morrism@u.washington.edu" />
+	</marker>
+	<marker name="Northwestern University Feinberg School of Medicine"
+		address="420 E Superior St, Chicago, IL 60611" email=""
+		website="http://www.feinberg.northwestern.edu/" phone="(512) 776-7111" lat="41.896068"
+		lng="-87.616877" type="phag">
+		<people name="Nanette Benbow" link="advisory-group.php#benbow"
+			email="n.benbow@gmail.com" />
+	</marker>
+</markers>
