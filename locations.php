@@ -14,7 +14,7 @@ if(!$fgmembersite->DBLogin())
 	<?php include("header.php"); ?>
 
 
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_ZeKd3aGkIISyp9zj1iA8j0y96xctDoo&callback=initMap" type="text/javascript"></script>
 	<script type="text/javascript">
 	
 	function xmlParse(str) {

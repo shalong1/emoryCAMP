@@ -20,18 +20,9 @@
                             <a href="about.php">Emory CAMP Team</a>
                         </li>
                         <li>
-                            <a href="about-partner.php">Partner Institutions </a>
+                            <a href="locations.php">Locations</a>
                         </li>
-                        <li>
-                            <a href="advisory-group.php">Public Health Advisory Group</a>
-                        </li>
-                        <li>
-                            <a href="locations.php">Locations </a>
-                        </li>
-                        <!--<li>
-                            <a href="about.html">Public Health Advisory Group</a>
-                        </li>-->
-                        
+                       
                     </ul>
                 </li>
                 <li class="dropdown">
