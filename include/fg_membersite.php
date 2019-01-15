@@ -38,8 +38,8 @@ class FGMembersite
     //-----Initialization -------
     function FGMembersite()
     {
-        $this->sitename = 'morycamp.org';
-        $this->rand_key = 'qSRcVS6DrTzrPvr';
+        $this->sitename = 'Emorycamp.org';
+        $this->rand_key = 'shanetestsite';
     }
     
     function InitDB($host,$uname,$pwd,$database,$tablename)

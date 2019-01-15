@@ -1,5 +1,6 @@
 <?PHP
 require_once("./include/fg_membersite.php");
+error_reporting(E_ALL ^ E_DEPRECATED);
 
 $fgmembersite = new FGMembersite();
 
@@ -17,11 +18,11 @@ $fgmembersite->InitDB(/*hostname*/'localhost',
                       /*username*/'emorycam_db_usr',
                       /*password*/'emoryCAMP2015!',					  
                       /*database name*/'emorycam_main',
-                      /*table name*/'admin_users');
+                      /*table name*/'users');
 
 //For better security. Get a random string from this link: http://tinyurl.com/randstr
 // and put it here
-$fgmembersite->SetRandomKey('qSRcVS6DrTzrPvr');
+$fgmembersite->SetRandomKey('shanetestsite');
 
 $directory='files';
 

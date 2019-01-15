@@ -605,6 +605,13 @@ div.aligncenter {
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 991px) {
+    .our-team {
+      height: auto;
+      background: yellow;
+    }
+  }
+
 .our-team .pic{
     position: relative;
     overflow: hidden;

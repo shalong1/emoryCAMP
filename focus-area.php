@@ -87,12 +87,12 @@ if(!$fgmembersite->DBLogin())
 			};
 			
 			echo '<div class="row">
-            <div class="col-md-7">
+            <div class="col-md-3">
                 <a href="item.php?i='.$row_items['id'].'">
-                    <img class="img-responsive img-hover" src="'.$coverimage.'" alt="'.$row_items['title'].'">
+                    <img class="img-responsive img-hover" style="max-height:200px" src="'.$coverimage.'" alt="'.$row_items['title'].'">
                 </a>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-9">
                 <h3>'.$row_items['title'].'</h3>
                 <h4>';
 				

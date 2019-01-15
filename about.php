@@ -43,9 +43,11 @@ if(!$fgmembersite->DBLogin())
             <div class="col-md-10 alert alert-info text-center" role="alert">
                
                 <a href="about.php#eu" >Emory University</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                <a href="about.php#jh" >Johns Hopkins University</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                <a href="about.php#u2" >University of Washington</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                 <a href="about.php#ua" >University of Albany</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="about.php#jh" >Johns Hopkins University</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="about.php#uw" >University of Washington</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="about.php#pha" >Public Health Advisory Group</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="about.php#sa" >Scientific Advisory Group</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                 <a href="about.php#a" >Alumni</a>
               
             </div>
@@ -213,7 +215,7 @@ if(!$fgmembersite->DBLogin())
                                         </div>
                                         <div class="team-content">
                                             <h4 class="title">Megan Fields, MPH</h4>
-                                            <span class="post"></span>
+                                            <span class="post">Dissemination Coordinator</span>
                                         </div>
                                     </div>
                                 </div>
@@ -242,7 +244,7 @@ if(!$fgmembersite->DBLogin())
                                         </div>
                                         <div class="team-content">
                                             <h4 class="title">Kevin Weiss, MPH</h4>
-                                            <span class="post"></span>
+                                            <span class="post">Data Analyst</span>
                                         </div>
                                     </div>
                                 </div>
@@ -258,7 +260,7 @@ if(!$fgmembersite->DBLogin())
                                                     alt="Kevin Weiss, MPH">
                                                     <p>Kevin joined PRISM Health as a graduate research assistant in 2014, and started as a full time staff member in 2016, focusing on CAMP. He works to support agent-based modeling efforts focusing on HIV and other STIs in MSM. He has worked on multiple projects with PRISM, including AIDSVu, HIVContinuum, Sibanye Health Project, and KPIS. He earned a BS in International Studies and Biology from the University of Michigan and a MPH in Global Epidemiology from the Rollins School of Public Health.</p>
                                             </div>
-                                            <div class="modal-footer">Data Analyst</div>
+                                            <div class="modal-footer"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -639,7 +641,7 @@ if(!$fgmembersite->DBLogin())
                                             <div class="modal-body">
                                                 <img class="img-responsive pull-left" style="width: 180px; padding-right: 7px;" src="images/bios/Pollock.jpg"
                                                     alt="Emily Pollock">
-                                                <p>No additional info.</p>
+                                                <p>Emily is a PhD student at the University of Washington working with Dr. Goodreau. Her research is focused on sexual behavior and STI transmission among adolescents and young adults. In particular, she uses national survey data and network modeling to understand the sources of observed changes in incidence patterns by age and race. As a member of CAMP, Emily has been involved in the development of the teen-SPARC tool, which helps public health officials estimate the effects of certain interventions on STI incidence among high schools students in the US.</p>
                                             </div>
                                             <div class="modal-footer"></div>
                                         </div>
@@ -950,8 +952,7 @@ if(!$fgmembersite->DBLogin())
                                         <div class="team-content">
                                             <h4 class="title">Jonathon Poe, MSSW</h4>
                                             <span class="post">
-                                                <b></b><br/>
-                                                
+                                            Texas Department of State Health Services
                                             </span>
                                         </div>
                                     </div>
@@ -1010,6 +1011,175 @@ if(!$fgmembersite->DBLogin())
                         </div>
 
 
+                        
+                        <div class="team-breadcrumb" id="sa">
+                            <h3>Scientific Advisory Group</h3>
+                            <div class="row">
+                                
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="our-team">
+                                        <div class="pic">
+                                            <img src="images/bios/Morris.jpg"   alt="Martina Morris, PhD">
+                                            <a href="#" class="bio-link read-more" data-toggle="modal" data-target=".bio-morris">read more</a>
+                                        </div>
+                                        <div class="team-content">
+                                            <h4 class="title">Martina Morris, PhD</h4>
+                                            <span class="post">
+                                            Scientific Advisory Group<br>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade bio-morris">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button class="close" type="button" data-dismiss="modal">×</button>
+                                                <h4 class="modal-title">Martina Morris, PhD</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="img-responsive pull-left" style="width: 180px; padding-right: 7px;" src="images/bios/Morris.jpg"
+                                                    alt="Martina Morris, PhD">
+                                                <p>Dr. Morris is a Professor at the University of Washington. She is an expert in population dynamics, sexual networks, and HIV/STI transmission models.</p>
+                                            </div>
+                                            <div class="modal-footer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="our-team">
+                                        <div class="pic">
+                                            <img src="images/bios/Holtgrave.jpg"   alt="David Holtgrave, PhD">
+                                            <a href="#" class="bio-link read-more" data-toggle="modal" data-target=".bio-holtgrave">read more</a>
+                                        </div>
+                                        <div class="team-content">
+                                            <h4 class="title">David Holtgrave, PhD</h4>
+                                            <span class="post">
+                                            Scientific Advisory Group Co-Director, Economic Modeling Core<br>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade bio-holtgrave">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button class="close" type="button" data-dismiss="modal">×</button>
+                                                <h4 class="modal-title">David Holtgrave, PhD</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="img-responsive pull-left" style="width: 180px; padding-right: 7px;" src="images/bios/Holtgrave.jpg"
+                                                    alt="David Holtgrave, PhD">
+                                                <p>Dr. Holtgrave is Professor, and Chair of the Department of Health, Behavior, and Society at Johns Hopkins University. He has held many CDC leadership positions, including Director of the Division of HIV/AIDS Prevention Intervention Research & Support. Dr. Holtgrave is a leading authority on economic evaluation and planning of HIV prevention programs and has extensive experience working with local public health departments to apply economic modeling to optimize HIV prevention resource allocation. He co-led an enhanced comprehensive HIV prevention plan (ECHHP) for the Baltimore-Towson MSA, which allocated $6 million in federal funds across interventions to avert the highest possible number of infections over 4 years, and has used mathematical modeling and economic evaluation methods to assess the effectiveness and cost-effectiveness of strategies designed to meet the goals of the National HIV/AIDS Strategy in the United States.</p>
+                                            </div>
+                                            <div class="modal-footer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="our-team">
+                                        <div class="pic">
+                                            <img src="images/bios/Curran.jpg"   alt="James Curran, MD">
+                                            <a href="#" class="bio-link read-more" data-toggle="modal" data-target=".bio-curran">read more</a>
+                                        </div>
+                                        <div class="team-content">
+                                            <h4 class="title">James Curran, MD</h4>
+                                            <span class="post">
+                                            Scientific Advisory Group<br>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade bio-curran">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button class="close" type="button" data-dismiss="modal">×</button>
+                                                <h4 class="modal-title">James Curran, MD</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="img-responsive pull-left" style="width: 180px; padding-right: 7px;" src="images/bios/Curran.jpg"
+                                                    alt="James Curran, MD">
+                                                <p>Dr. Curran is Dean and Professor of Epidemiology of the Rollins School of Public Health and Principal Investigator of the Emory Center for AIDS Research.  He has authored > 270 scientific publications and was elected to the Institute of Medicine of the National Academy of Sciences in 1993.  He served as Director of the CDC AIDS Activity, Director of the HIV/AIDS Division, Assistant Surgeon General, and has been a member of the Board of Public Health in the State of Georgia since 2011.</p>
+                                            </div>
+                                            <div class="modal-footer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="our-team">
+                                        <div class="pic">
+                                            <img src="images/bios/del Rio.jpg"   alt="Carlos del Rio, MD">
+                                            <a href="#" class="bio-link read-more" data-toggle="modal" data-target=".bio-delrio">read more</a>
+                                        </div>
+                                        <div class="team-content">
+                                            <h4 class="title">Carlos del Rio, MD</h4>
+                                            <span class="post">
+                                            Clinical Core Co-director, Scientific Advisory Group<br>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade bio-delrio">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button class="close" type="button" data-dismiss="modal">×</button>
+                                                <h4 class="modal-title">Carlos del Rio, MD</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="img-responsive pull-left" style="width: 180px; padding-right: 7px;" src="images/bios/del Rio.jpg"
+                                                    alt="Carlos del Rio, MD">
+                                                <p>Dr. del Rio is Professor and Chair of the Hubert Department of Global Health and a Professor of Infectious Diseases. He is also co-Director of the Emory Center for AIDS Research (CFAR). Dr. del Rio is a member of the Monitoring of the AIDS Pandemic (MAP) Network, Board of the IAS-USA, DHHS Antiretroviral Treatment Guidelines, and Board of the HIVMA; Senior Clinical Editor for AIDS Research and Human Retroviruses; and an Associate Editor of AIDS Clinical Care. His focus is access to care and healthcare utilization among HIV-infected persons in the US.</p>
+                                            </div>
+                                            <div class="modal-footer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="our-team">
+                                        <div class="pic">
+                                            <img src="images/bios/Dowdy.jpg"   alt="David Dowdy, MD, PhD">
+                                            <a href="#" class="bio-link read-more" data-toggle="modal" data-target=".bio-dowdy1">read more</a>
+                                        </div>
+                                        <div class="team-content">
+                                            <h4 class="title">David Dowdy, MD, PhD</h4>
+                                            <span class="post">
+                                            JHU Principal Investigator; Economic Modeling Core Director, Scientific Advisory Group<br>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade bio-dowdy1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button class="close" type="button" data-dismiss="modal">×</button>
+                                                <h4 class="modal-title">David Dowdy, MD, PhD</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="img-responsive pull-left" style="width: 180px; padding-right: 7px;" src="images/bios/Dowdy.jpg"
+                                                    alt="David Dowdy, MD, PhD">
+                                                <p>Dr. Dowdy is an Assistant Professor of Epidemiology, practicing general internist, leader in the field of TB and TB/HIV modeling, and Director of the Johns Hopkins Tuberculosis Modeling Group. His expertise combines operational/implementation research, epidemiology, health economics, and mathematical modeling. He has published >75 peer-reviewed manuscripts, constructed >10 economic models of interventions to fight TB and TB/HIV and has interests in constructing models that account for local distribution of disease, as well as user-friendly models that can be accessed by public health decision-makers. He , won the International Union Against TB and Lung Disease’s Young Investigator Award in 2012 and leads twice-monthly conference calls (>100 group members) that highlight the importance of linkages between TB modelers and public health practitioners (podcasts available at modeltb.org), which include participants from the CDC and local health departments.</p>
+                                            </div>
+                                            <div class="modal-footer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
                         <div class="team-breadcrumb" id="a">
                             <h3>Alumni</h3>
                             <div class="row">

@@ -1,0 +1,3 @@
+Options +FollowSymLinks
+RewriteEngine On
+Redirect 301 /teensparc    http://www.emorycamp.org/test-tools.php

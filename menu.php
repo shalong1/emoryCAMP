@@ -16,7 +16,7 @@
                 <li>
                     <a href="about.php">About</a>
                 </li>
-                <li class="dropdown">
+                <!--<li class="dropdown">
                     <a href="project.php" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     <?PHP
@@ -29,7 +29,7 @@
                         ?>
                        
                     </ul>
-                </li>
+                </li>-->
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Focus Areas<b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -54,6 +54,9 @@
                 <!--<li>
                     <a href="current-work.php">Current Work</a>
                 </li>-->
+                <li>
+                    <a href="tools.php">Tools</a>
+                </li>
                 <li>
                     <a href="downloads.php">Downloads</a>
                 </li>

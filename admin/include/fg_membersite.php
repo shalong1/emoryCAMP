@@ -38,7 +38,7 @@ class FGMembersite
     //-----Initialization -------
     function FGMembersite()
     {
-        $this->sitename = 'morycamp.org';
+        $this->sitename = 'Emorycamp.org';
         $this->rand_key = 'qSRcVS6DrTzrPvr';
     }
     
