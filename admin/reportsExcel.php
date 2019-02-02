@@ -43,7 +43,7 @@ if(isset($_POST['submitted']))
 Click the link to open the report in an Excel spreadsheet.
 <p>
 
-<a href="excel.php?query=SELECT id,firstname,lastname,email,'' FROM mailinglist" target="_blank">Mailing List Emails Excel Spreadsheet</a><br />
+<a href="excel.php?query=SELECT id,firstname,lastname,email,interest,message'' FROM mailinglist" target="_blank">Mailing List Emails Excel Spreadsheet</a><br />
 <a href="excel.php?query=SELECT id,filename,ip_address,download_time,'' FROM download_log" target="_blank">Download Log</a><br />
 <!--<a href="excel.php?query=SELECT * FROM invitedUsers" target="_blank">Invited Users Excel Spreadsheet</a><br />-->
 

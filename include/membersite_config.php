@@ -8,7 +8,8 @@ $fgmembersite = new FGMembersite();
 $fgmembersite->SetWebsiteName('EmoryCAMP.org');
 
 //Provide the email address where you want to get notifications
-$fgmembersite->SetAdminEmail('emorycamp@emory.edu');
+//$fgmembersite->SetAdminEmail('emorycamp@emory.edu');
+$fgmembersite->SetAdminEmail('shalong@gmail.com');
 
 //Provide your database login details here:
 //hostname, user name, password, database name and table name

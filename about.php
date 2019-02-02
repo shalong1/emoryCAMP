@@ -668,7 +668,7 @@ if(!$fgmembersite->DBLogin())
                                         <div class="team-content">
                                             <h4 class="title">Jane Kelly, MD</h4>
                                             <span class="post">
-                                                <b>Georgia Department of Public Health</b><br/>
+                                                Georgia Department of Public Health<br/>
                                                 Public Health Advisory Group Director
                                             </span>
                                         </div>

@@ -110,6 +110,13 @@ $(document).ready(function() {
 	else {
 		$('.divWebsite').hide();
 	}
+
+	if ($('#ddlItemType option:selected').text() == "Video"){
+		$('.divWebsite').show();
+	}
+	else {
+		$('.divWebsite').hide();
+	}
 	
 	$('#ddlItemType').change(function () {
 		if ($('#ddlItemType option:selected').text() == "Manuscript"){
@@ -132,6 +139,13 @@ $(document).ready(function() {
 		else {
 			$('.divWebsite').hide();				   
 		}
+
+		if ($('#ddlItemType option:selected').text() == "Video"){
+		$('.divWebsite').show();
+	}
+	else {
+		$('.divWebsite').hide();
+	}
 		
 	}); 
 	

@@ -158,7 +158,106 @@ class FGMembersite
         return true;
     }    
 	
-	function MailingListUser()
+	function MailingListPageUser()
+    {
+       
+        $formvars = array();
+        
+      
+        $this->CollectMailingListPageSubmission($formvars);
+        
+        if(!$this->InsertMailingPageListIntoDB($formvars))
+        {
+            return false;
+        }
+        
+        $this->SendMailingPageListEmail($formvars);
+        
+        return true;
+    }
+	
+	function CollectMailingListPageSubmission(&$formvars)
+    {
+        
+        $formvars['firstname'] = $this->Sanitize($_POST['firstname']);
+		$formvars['lastname'] = $this->Sanitize($_POST['lastname']);
+        $formvars['email'] = $this->Sanitize($_POST['email']);    
+        $formvars['message'] = $this->Sanitize($_POST['message']); 
+        $formvars['interest'] = implode(",",$_POST['chkInterest']);
+    }
+
+    function InsertMailingPageListIntoDB(&$formvars)
+    {
+     
+        $qry = "Select email from mailinglist where email='".$formvars['email']."'";
+        
+        $result = mysql_query($qry,$this->connection);
+        
+        if(mysql_num_rows($result) > 0)
+        {
+            $this->HandleError("Email Already in List.");
+            return false;
+        }
+
+
+        $insert_query = 'insert into mailinglist(
+                firstname,
+                lastname,
+                email,
+                message,
+                interest,
+                createdate
+                )
+                values
+                (
+                "' . $this->SanitizeForSQL($formvars['firstname']) . '",
+				"' . $this->SanitizeForSQL($formvars['lastname']) . '",
+                "' . $this->SanitizeForSQL($formvars['email']) . '",  
+                "' . $this->SanitizeForSQL($formvars['message']) . '", 
+                "' . $this->SanitizeForSQL($formvars['interest']) . '",               
+                "' . date("Y-m-d H:i:s") . '"
+                )';  
+   
+        if(!mysql_query( $insert_query ,$this->connection))
+        {
+            $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
+            return false;
+        }        
+        return true;
+    }
+
+    function SendMailingPageListEmail(&$formvars)
+    {
+        if(empty($this->admin_email))
+        {
+            return false;
+        }
+        $mailer = new PHPMailer();
+        
+        $mailer->CharSet = 'utf-8';
+        
+        $mailer->AddAddress($this->admin_email);
+        
+        $mailer->Subject = "New mailing list request: ".$formvars['firstname']. " " .$formvars['lastname'];
+
+        $mailer->From = $this->GetFromAddress();         
+        
+        $mailer->Body ="A new user requested to be added to the mailing list for ".$this->sitename."\r\n".
+        "First Name: ".$formvars['firstname']."\r\n".
+        "Last Name: ".$formvars['lastname']."\r\n".
+        "Email: ".$formvars['email']."\r\n".
+        "Message: ".$formvars['message']."\r\n".
+        "Interests: ".$formvars['interest'];
+        
+        if(!$mailer->Send())
+        {
+            return false;
+        }
+        return true;
+		
+    }
+
+    function MailingListUser()
     {
        
         $formvars = array();
@@ -175,8 +274,7 @@ class FGMembersite
         
         return true;
     }
-	
-	
+
 	function CollectMailingListSubmission(&$formvars)
     {
         $formvars['firstname'] = $this->Sanitize($_GET['f']);
@@ -186,7 +284,22 @@ class FGMembersite
 	
 	function InsertMailingListIntoDB(&$formvars)
     {
-     
+        if($formvars['email'] == '')
+        {
+            $this->HandleError("Not a Valid Email.");
+            return false;
+        }
+
+        $qry = "Select email from mailinglist where email='".$formvars['email']."'";
+        
+        $result = mysql_query($qry,$this->connection);
+        
+        if(mysql_num_rows($result) > 0)
+        {
+            $this->HandleError("Email Already in List.");
+            return false;
+        }
+
         $insert_query = 'insert into mailinglist(
                 firstname,
                 lastname,

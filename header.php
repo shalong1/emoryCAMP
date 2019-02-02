@@ -6,7 +6,7 @@
 <meta property="og:title" content="EmoryCAMP"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="http://www.emorycamp.org/"/>
-<meta property="og:image" content="http://www.emorycamp.org/images/logo.png"/>
+<meta property="og:image" content="http://www.emorycamp.org/images/logo_lg.png"/>
 <meta property="og:site_name" content="Emory Coalition for Applied Modeling for Prevention"/>
 
 <title>EmoryCAMP.org</title>

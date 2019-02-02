@@ -58,7 +58,7 @@ $editURL6 = ($row_settings ['url6']);
 $editURL7 = ($row_settings ['url7']);
 $editURL8 = ($row_settings ['url8']);
 
-$results = mysql_query ( "SELECT id, concat(id,': ',substring(title,1,100)) as fulltitle FROM items where isActive=1 and isFutureWork=0 order by id" ) or die ( mysql_error () );
+$results = mysql_query ( "SELECT id, concat(id,': ',substring(title,1,100)) as fulltitle FROM items  order by id" ) or die ( mysql_error () );
 $row_count = mysql_num_rows ( $results );
 
 echo "<strong>" . $surveyLabel . "</strong><br>";

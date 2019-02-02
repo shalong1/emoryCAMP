@@ -5,6 +5,7 @@ if(!$fgmembersite->DBLogin())
 	echo "Error Connecting to Database";
 	exit;
 }	
+$i=0;
 
 $sql = "SELECT * FROM settings ";
 
@@ -26,12 +27,11 @@ $item_results = mysql_query($sql)or die(mysql_error());
 <!DOCTYPE html>
 <html lang="en">
 
-<head><?php include("header.php"); ?></script>
-
+<head>
+    <?php include("header.php"); ?>
 </head>
 
 <body>
-
     <!-- Navigation -->
     <?php include("menu.php"); ?>
 
@@ -77,14 +77,14 @@ $item_results = mysql_query($sql)or die(mysql_error());
 
     <!-- Page Content -->
     <div class="container">
-    
-    <div class="row">
-    	<div class="col-lg-4">
-    		<div class="list-group landingpage" style="margin-top:20px; font-size: 17px;">
-			  <a href="#" class="list-group-item active">
-			    Trending Now!
-			  </a>
-			  <?php 
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="list-group landingpage" style="margin-top:20px; font-size: 17px;">
+                    <a href="#" class="list-group-item active">
+                        Trending Now
+                    </a>
+                    <?php 
 			  if ($row_settings['url1'] != "") 
 			  	echo "<a target='_blank' href='". $row_settings['url1'] ."'class='list-group-item list-group-item-info'>". $row_settings['title1'] ."</a>";
 			  if ($row_settings['url2'] != "")
@@ -102,48 +102,58 @@ $item_results = mysql_query($sql)or die(mysql_error());
 			  if ($row_settings['url8'] != "")
 			  	echo "<a target='_blank' href='". $row_settings['url8'] ."'class='list-group-item list-group-item-info'>". $row_settings['title8'] ."</a>";
 			?>
-			  
-			</div>
-			
+
+                </div>
+
+            </div>
+            <div class="col-lg-8">
+                <h1 class="page-header">
+                    Welcome to Emory CAMP
+                </h1>
+            </div>
+            <div class="col-lg-8">
+                <span style="font-size:20px">
+                    <p>The Emory Coalition for Applied Modeling for Prevention (CAMP) is dedicated to creating models
+                        that improve public health decision-making at the national, state, and local levels. We use
+                        statistical, epidemic simulation, and economic models to uncover new disease patterns and
+                        inform prevention policies in five areas: HIV, viral hepatitis, sexually transmitted
+                        infections, tuberculosis and school/adolescent health.</p>
+                    <p>We are made up of experts from a variety of fields - epidemiologists, economic and infectious
+                        disease modelers, physicians, economists, and health department representatives - working in
+                        partnership with leaders at the US Centers for Disease Control and Prevention.</p>
+                    <p>Now in its fifth year, CAMP has published a variety of high-impact scientific papers that tackle
+                        tough public health questions and has released interactive web tools that guide
+                        decision-making. </p>
+                    <p>Explore our website to learn more about our work and the CAMP team. Thank you for visiting!</p>
+                </span>
+                <span style="font-size:15px">
+                    This work is supported by The Centers for Disease Control and Prevention [Grant #5 NU38 PS004646]
+                </span>
+            </div>
         </div>
-       <div class="col-lg-8">
-            <h1 class="page-header">
-                Welcome to Emory CAMP!
-            </h1>
-        </div>
-        <div class="col-lg-8">
-        	<span style="font-size:20px">
-        	<p>The Emory Coalition for Applied Modeling for Prevention (CAMP) is dedicated to creating models that improve public health decision-making at the national, state, and local levels. We use statistical, epidemic simulation, and economic models to uncover new disease patterns and inform prevention policies in five areas: HIV, viral hepatitis, sexually transmitted infections, tuberculosis and school/adolescent health.</p> 
- 			<p>We are made up of experts from a variety of fields - epidemiologists, economic and infectious disease modelers, physicians, economists, and health department representatives - working in partnership with leaders at the US Centers for Disease Control and Prevention.</p>
- 			<p>Now in its fifth year, CAMP has published a variety of high-impact scientific papers that tackle tough public health questions and has released interactive web tools that guide decision-making. </p>
- 			<p>Explore our website to learn more about our work and the CAMP team. Thank you for visiting!</p>
- 			</span>
- 			<span style="font-size:15px">
-			This work is supported by The Centers for Disease Control and Prevention [Grant #5 NU38 PS004646]
-        	</span>
-        </div>
-   </div> 
-    
-   
-	
-    <!-- <div class="row">
+
+
+
+        <!-- <div class="row">
     <div class="col-md-12">&nbsp;
     </div>
     </div>
      -->
-     
+
         <!-- Featured Content Section -->
         <div class="row">
-        	<div class="col-lg-12">
-            <h1 class="page-header">
-                Featured Content
-            </h1>
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Featured Content
+                </h1>
+            </div>
         </div>
-        	<?php
+        <div class="row callouts">
+            <?php
 			while ($row_items = mysql_fetch_assoc($item_results)) {
 				
-				echo '<div class="col-md-4">
-					<div class="panel panel-default">
+				echo '<div class="col-md-4 panel panel-default" style="">
+					
 						<div class="panel-heading">
 							<h4>'.$row_items['title'].'</h4>
 						</div>
@@ -154,76 +164,86 @@ $item_results = mysql_query($sql)or die(mysql_error());
 						echo $fgmembersite->GetAuthors($row_items['id']);
 	
 							
-							echo '</p>
-								<p><img class="img-responsive img-hover" src="files/'.($row_items['cidfilename']).'" alt="'.$row_items['title'].'"></p>
-            					<a href="item.php?i='.$row_items['id'].'" class="btn btn-default">Learn More</a>
-						</div>
-					</div>
+                            echo '</p>';
+                            if ($row_items['itemtype']==2)
+                                echo '<div class="video-responsive"><iframe id="ytplayer" type="text/html"   src="'.$row_items['toolurl'].'?autoplay=0&origin=http://example.com" allowfullscreen="1" frameborder="0"></iframe></div>'; 
+                            else
+                                echo '<p><img class="img-responsive img-hover" src="files/'.($row_items['cidfilename']).'" alt="'.$row_items['title'].'"></p>
+                               
+                                <a href="item.php?i='.$row_items['id'].'" class="btn btn-default btn-callout">Learn More</a>';
+                          echo '</div>
+					
 				</div>';
 			}
 			?>
-            
-          </div>  
-           
-        <!-- /.row -->
-         <div class="row">
-        	<div class="col-lg-12">
-            <h1 class="page-header">
-                Current Efforts
-            </h1>
+
         </div>
-        <div class="col-md-12">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-				</div>
-                
-                
-				<div class="panel-body">
-               
-                <p><div class="text-center">The CAMP team is actively working on new and innovative models. View a brief synopsis of this upcoming work by following the below links to the respective focus areas. Check back periodically for the published work!</div></p>
-                
-                <div class="dropdown text-center">
-                  <button class="btn btn-primary btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Select Focus Area to View All Current Work
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="left: 50%;  right: auto;  text-align: center;  transform: translate(-50%, 0);">
-                    <li><a href="current-work.php?HIV">HIV</a></li>
-                    <li><a href="current-work.php?SexuallyTransmittedDisease">Sexually Transmitted Disease</a></li>
-                    <li><a href="current-work.php?AdolescentHealth">Adolescent Health</a></li>
-                    <li><a href="current-work.php?ViralHepatitis">Viral Hepatitis</a></li>
-                    <li><a href="current-work.php?Tuberculosis">Tuberculosis</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="current-work.php?All">View All</a></li>
-                  </ul>
+
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Current Efforts
+                </h1>
+            </div>
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                    </div>
+
+
+                    <div class="panel-body">
+
+                        <p>
+                            <div class="text-center">The CAMP team is actively working on new and innovative models.
+                                View a brief synopsis of this upcoming work by following the below links to the
+                                respective focus areas. Check back periodically for the published work.</div>
+                        </p>
+
+                        <div class="dropdown text-center">
+                            <button class="btn btn-primary btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Select Focus Area to View All Current Work
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="left: 50%;  right: auto;  text-align: center;  transform: translate(-50%, 0);">
+                                <li><a href="current-work.php?HIV">HIV</a></li>
+                                <li><a href="current-work.php?SexuallyTransmittedDisease">Sexually Transmitted Disease</a></li>
+                                <li><a href="current-work.php?AdolescentHealth">Adolescent Health</a></li>
+                                <li><a href="current-work.php?ViralHepatitis">Viral Hepatitis</a></li>
+                                <li><a href="current-work.php?Tuberculosis">Tuberculosis</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="current-work.php?All">View All</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
                 </div>
-                
-					
-				</div>
-			</div>
-		</div>
-		
-        
-        
-       
-        <!-- Footer -->
-        <?php include("footer.php"); ?>
-       
-    	</div>
-    <!-- /.container -->
+            </div>
+        </div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
+
+            <!-- Footer -->
+            <?php include("footer.php"); ?>
+
+        </div>
+        <!-- /.container -->
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Script to Activate the Carousel -->
+        <script>
+            $('.carousel').carousel({
+                interval: 5000 //changes the speed
+            })
+        </script>
 
 </body>
 

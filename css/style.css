@@ -596,6 +596,11 @@ div.aligncenter {
 }
 
 
+.footer-image {
+    width:50px;
+}
+
+
 
 /* For the Alumni List Style */
 .our-team{
@@ -608,7 +613,12 @@ div.aligncenter {
 @media screen and (max-width: 991px) {
     .our-team {
       height: auto;
-      background: yellow;
+    }
+  }
+
+@media screen and (min-width: 1400px) {
+    .our-team {
+        height: 430px;
     }
   }
 
