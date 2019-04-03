@@ -46,6 +46,7 @@ if(!$fgmembersite->DBLogin())
                 <a href="about.php#ua" >University of Albany</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                 <a href="about.php#jh" >Johns Hopkins University</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                 <a href="about.php#uw" >University of Washington</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="about.php#gsu" >Georgia State University</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                 <a href="about.php#pha" >Public Health Advisory Group</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                 <a href="about.php#sa" >Scientific Advisory Group</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                 <a href="about.php#a" >Alumni</a>
@@ -259,6 +260,35 @@ if(!$fgmembersite->DBLogin())
                                                 <img class="img-responsive pull-left" style="width: 180px; padding-right: 7px;" src="images/bios/Weiss.jpg"
                                                     alt="Kevin Weiss, MPH">
                                                     <p>Kevin joined PRISM Health as a graduate research assistant in 2014, and started as a full time staff member in 2016, focusing on CAMP. He works to support agent-based modeling efforts focusing on HIV and other STIs in MSM. He has worked on multiple projects with PRISM, including AIDSVu, HIVContinuum, Sibanye Health Project, and KPIS. He earned a BS in International Studies and Biology from the University of Michigan and a MPH in Global Epidemiology from the Rollins School of Public Health.</p>
+                                            </div>
+                                            <div class="modal-footer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="our-team">
+                                        <div class="pic">
+                                            <img src="images/bios/Do.jpg"   alt="Ann Do, MD, MPH">
+                                            <a href="#" class="bio-link read-more" data-toggle="modal" data-target=".bio-do">read more</a>
+                                        </div>
+                                        <div class="team-content">
+                                            <h4 class="title">Ann Do, MD, MPH</h4>
+                                            <span class="post">Adjunct Associate Professor</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade bio-do">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button class="close" type="button" data-dismiss="modal">×</button>
+                                                <h4 class="modal-title">Ann Do, MD, MPH</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="img-responsive pull-left" style="width: 180px; padding-right: 7px;" src="images/bios/Do.jpg"
+                                                    alt="Ann Do, MD, MPH">
+                                                    <p>Dr. Ann Do joined CAMP in 2018, after 24 years of public health service at the Centers for Disease Control and Prevention (CDC). She received an M.D. from the University of Tennessee at Memphis and an M.P.H. from Emory University Rollins School of Public Health. She completed residency training in pediatrics at Baylor College of Medicine and in general public health and preventive medicine at the CDC. Most of her career at the CDC was as a medical epidemiologist supporting HIV surveillance efforts in the Division of HIV/AIDS Prevention (DHAP). Her most recently held position was as Associate Chief for Science in the Epidemiology Branch in DHAP, where she provided oversight for the quality and ethics of scientific activities. Her primary role in CAMP is to support dissemination activities.</p>
                                             </div>
                                             <div class="modal-footer"></div>
                                         </div>
@@ -651,6 +681,45 @@ if(!$fgmembersite->DBLogin())
 
                             </div>
                         </div>
+
+                        <div class="team-breadcrumb" id="gsu">
+                            <h3>Georgia State University</h3>
+                            <div class="row">
+
+                                
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="our-team">
+                                        <div class="pic">
+                                            <img src="images/bios/Bradley.jpg"   alt="Heather Bradley, PhD">
+                                            <a href="#" class="bio-link read-more" data-toggle="modal" data-target=".bio-bradley">read more</a>
+                                        </div>
+                                        <div class="team-content">
+                                            <h4 class="title">Heather Bradley, PhD</h4>
+                                            <span class="post">GSU Principal Investigator</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade bio-bradley">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button class="close" type="button" data-dismiss="modal">×</button>
+                                                <h4 class="modal-title">Heather Bradley, PhD</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="img-responsive pull-left" style="width: 180px; padding-right: 7px;" src="images/bios/Bradley.jpg"
+                                                    alt="Heather Bradley, PhD">
+                                                <p>Heather Bradley is an Assistant Professor of Epidemiology & Biostatistics at the School of Public Health at Georgia State University. She is an epidemiologist whose main research interests include HIV prevention and treatment outcomes, surveillance methodology, and the intersection of infectious diseases with the U.S. opioid epidemic. Prior to joining the faculty at Georgia State, Dr. Bradley worked for the Centers for Disease Control and Prevention in various positions, including as an Epidemic Intelligence Service (EIS) Officer in the Division of STD Prevention. Most recently, she served as an Associate Chief for Science for the CDC’s Division of HIV/AIDS Prevention, where she oversaw scientific practice and regulatory issues for more than 50 epidemiologists.</p>
+                                            </div>
+                                            <div class="modal-footer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
 
 
 

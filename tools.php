@@ -71,18 +71,7 @@ if(!$fgmembersite->DBLogin())
         <hr>	
        
 
-       <div class="row">
-            <div class="col-md-4"><img width="100%" alt="tb graph" src="files/US_STATE_N_MSM_5YR_2013_8.png"/>
-            </div>
-            <div class="col-md-8">
-                <h3>MSM Estimation State Profiles</h3>
-                <h4>In 2015-2016, researchers at Emory University partnered with colleagues at the Centers for Disease Control and Prevention (CDC) to develop methods to estimate the number of men who have sex with men (MSM) residing in each county in the United States. Using population and housing data from the American Community Survey and estimates from two peer-reviewed publications (Oster et al., 2015 & Purcell et al., 2012), they derived an indirect estimate of MSM population sizes that took into account both the urbanicity of the county as well as its density of households with a male householder and a male same-sex partner.</h4>
-                <p> 
-                    <a class="btn btn-primary" target="_blank" href="item.php?i=50">Explore Profiles</a>
-                </p>
-            </div>
-        </div>
-        <hr>
+    
 
         <div class="row">
             <div class="col-md-4"><img width="100%" alt="tb graph" src="files/Capture%202.JPG"/>
